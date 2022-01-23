@@ -1,0 +1,17 @@
+<!DOCTYPE>
+<html>
+<head>
+  <title>无标题文档</title>
+</head>
+<body>
+<div id="aa"></div>
+<script language="javascript">
+  var fso, ts, s ;
+  var ForReading = 1;
+  fso = new ActiveXObject("Scripting.FileSystemObject");
+  ts = fso.OpenTextFile("test.txt", ForReading);
+  s = ts.ReadLine();
+  document.getElementById("aa").innerHTML=s;
+</script>
+</body>
+</html>

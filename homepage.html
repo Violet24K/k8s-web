@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+    <title>Page Index</title>
+</head>
+<body>
+
+<h1 align="center">Kubernetes Security Detection System</h1>
+
+<p>
+<div style="text-align:center; height:40px">
+    <button onclick="resources_monitoring()">Resources Monitoring</button>
+</div>
+</p>
+<p>
+<div style="text-align:center; height:40px">
+    <button onclick="property_inventory()">Property Inventory</button>
+</div>
+</p>
+<p>
+<div style="text-align:center; height:40px">
+    <button onclick="logging_system()">Logging System</button>
+</div>
+</p>
+<p>
+    <a href="/k8s_CIS">k8s_CIS</a>
+</p>
+<p>
+    <a href="/docker_CIS">docker_CIS</a>
+</p>
+
+<script>
+    function resources_monitoring() {
+        window.open("http://192.168.80.240:32332");
+    }
+    function property_inventory() {
+        window.open("http://192.168.80.240:32582");
+    }
+    function logging_system() {
+        window.open("http://192.168.80.240:30238");
+    }
+</script>
+
+</body>
+</html>
